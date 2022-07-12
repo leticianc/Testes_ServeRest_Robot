@@ -1,0 +1,39 @@
+Cenário: POST Login 200
+    POST Fazer Login no endpoint /login usando e-mail e senha válidos
+    Validar Status Code "200"
+    Validar Mensagem "Login realizado com sucesso"
+
+Cenário: GET Produtos 200
+    GET Listar Produtos no Endpoint /produtos
+    Validar Todos os Produtos na Response
+    Validar Status Code "200"
+
+Cenário: POST Cadastrar Produto 201
+    POST Cadastrar Produto no Endpoint /produtos
+    Validar Status Code "201"
+    Validar Mensagem "Cadastro com sucesso"
+
+Cenário: PUT Editar Produto Existente 200
+    PUT Editar Produto no endpoint /produtos usando uma id válida
+    Validar Status Code "200"
+    Validar Mensagem "Alterado com sucesso"
+
+Cenário: DELETE Produto Existente 200
+    DELETE Produto Específico usando id válida
+    Validar Status Code "200"
+    Validar Mensagem "Registro excluído com sucesso | Nenhum registro excluído"
+
+Cenário: GET Carrinhos 200
+    GET Carrinhos no Endpoint /carrinhos
+    Validar Todos os Carrinhos na Response
+    Validar Status Code "200"
+
+Cenário: POST Cadastrar Carrinho
+    POST Cadastrar Carrinho no Endpoint /carrinhos
+    Validar Status Code "201"
+    Validar Mensagem "Cadastro com sucesso"
+
+Cenário: DELETE Excluir Carrinho 200
+    DELETE Excluir Carrinho no Endpoint /carrinhos/concluir-compra
+    Validar Status Code "200"
+    Validar Mensagem "Registro excluído com sucesso | Não foi encontrado carrinho para esse usuário"
