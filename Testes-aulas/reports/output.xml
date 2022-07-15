@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.2 on win32)" generated="20220714 20:42:21.515" rpa="false" schemaversion="3">
+<suite id="s1" name="Base" source="C:\Users\letic\OneDrive\Área de Trabalho\Robotron_Leticia_Nunes_ProjetoFinal\Testes-aulas\base.robot">
+<test id="s1-t1" name="Cenario: DELETE Deletar usuario 200" line="32">
+<kw name="Criar Sessao">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>serverest</arg>
+<arg>http://localhost:3000/</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220714 20:42:21.696" level="INFO">Creating Session using : alias=serverest, url=http://localhost:3000/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220714 20:42:21.696" endtime="20220714 20:42:21.696"/>
+</kw>
+<status status="PASS" starttime="20220714 20:42:21.680" endtime="20220714 20:42:21.696"/>
+</kw>
+<kw name="DELETE Endpoint /usuarios" library="usuarios_keywords">
+<kw name="DELETE On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>serverest</arg>
+<arg>/usuarios/sUDlMpdFTeRzq76c</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<msg timestamp="20220714 20:42:21.708" level="INFO">DELETE Request : url=http://localhost:3000/usuarios/sUDlMpdFTeRzq76c 
+ path_url=/usuarios/sUDlMpdFTeRzq76c 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg timestamp="20220714 20:42:21.708" level="INFO">DELETE Response : url=http://localhost:3000/usuarios/sUDlMpdFTeRzq76c 
+ status=200, reason=OK 
+ headers={'Access-Control-Allow-Origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '65ecdf35-0bc7-45cb-a99a-9a0ed8544c85', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '46', 'Date': 'Thu, 14 Jul 2022 23:42:21 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={
+    "message": "Nenhum registro excluído"
+} 
+ </msg>
+<msg timestamp="20220714 20:42:21.708" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220714 20:42:21.696" endtime="20220714 20:42:21.708"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Response: ${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220714 20:42:21.708" endtime="20220714 20:42:21.708"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${response}</arg>
+<arg>Set Variable</arg>
+<arg>${response.json()["authorization"]}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20220714 20:42:21.720" level="FAIL">Setting list value to scalar variable '${response}' is not supported anymore. Create list variable '@{response}' instead.</msg>
+<status status="FAIL" starttime="20220714 20:42:21.708" endtime="20220714 20:42:21.720"/>
+</kw>
+<status status="FAIL" starttime="20220714 20:42:21.696" endtime="20220714 20:42:21.720"/>
+</kw>
+<kw name="Validar Status Code &quot;200&quot;" sourcename="Validar Status Code &quot;${statuscode}&quot;">
+<status status="NOT RUN" starttime="20220714 20:42:21.720" endtime="20220714 20:42:21.720"/>
+</kw>
+<tag>DELETE</tag>
+<status status="FAIL" starttime="20220714 20:42:21.680" endtime="20220714 20:42:21.720">Setting list value to scalar variable '${response}' is not supported anymore. Create list variable '@{response}' instead.</status>
+</test>
+<doc>Arquivo simples para requisições HTTP em APIs</doc>
+<status status="FAIL" starttime="20220714 20:42:21.515" endtime="20220714 20:42:21.720"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">DELETE</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Base">Base</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

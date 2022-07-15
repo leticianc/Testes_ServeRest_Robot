@@ -2,15 +2,9 @@
 * Settings *
 Documentation       Arquivo simples para requisições HTTP em APIs
 Library             RequestsLibrary
-
-
-#Sessão para setagem de variáveis para utilização
-* Variables *
-${nome_do_usuario}      herbert richards
-${senha_do_usuario}     teste123
-${email_do_usuario}     testedoteste@email.com
-
-
+Resource            ./usuarios_keywords.robot
+Resource            ./login_keywords.robot
+Resource            ./produtos_keywords.robot
 
 #Sessão para criação dos cenários de teste
 * Test Cases *
@@ -41,32 +35,31 @@ Cenario: DELETE Deletar usuario 200
     DELETE Endpoint /usuarios
     Validar Status Code "200" 
 
+Cenario: POST Realizar Login 200
+    [tags]      POSTLOGIN
+    Criar Sessao
+    POST Endpoint /login
+    Validar Status Code "200"
+
+Cenario: POST Criar Produto 201
+    [tags]      POSTPRODUTO
+    Criar Sessao
+    Fazer Login e Armazenar Token
+    POST Endpoint /produtos
+    Validar Status Code "201"
+
+Cenario: DELETE Excluir Produto 200
+    [tags]      DELETEPRODUTO
+    Criar Sessao
+    Fazer Login e Armazenar Token
+    Criar Um Produto e Armazenar ID
+    DELETE Endpoint /produtos
+    Validar Status Code "200"
 
 #Sessão para criação de Keywords Personalizadas
 * Keywords *
 Criar Sessao
     Create Session          serverest   http://localhost:3000/
-
-GET Endpoint /usuarios
-    ${response}             GET On Session      serverest       /usuarios
-    Set Global Variable     ${response}
-
-POST Endpoint /usuarios
-    &{payload}              Create Dictionary   nome=${nome_do_usuario}    email=${email_do_usuario}    password=${senha_do_usuario}    administrador=true
-    ${response}             POST On Session     serverest   /usuarios   data=&{payload}
-    Log to console          Response: ${response.content}
-    Set Global Variable     ${response}
-
-PUT Endpoint /usuarios
-    &{payload}              Create Dictionary   nome=nome novo    email=fulana@email.com     password=123    administrador=true
-    ${response}             PUT On Session      serverest   /usuarios/4gUPBrg8xy1aYbNK  data=&{payload}
-    Log to console          Response: ${response.content}
-    Set Global Variable     ${response}
-
-DELETE Endpoint /usuarios
-    ${response}             DELETE On Session     serverest     /usuarios/4gUPBrg8xy1aYbNK
-    Log to console          Response: ${response.content}
-    Set Global Variable     ${response}
 
 Validar Status Code "${statuscode}"
     Should Be True      ${response.status_code} == ${statuscode}

@@ -1,198 +1,198 @@
-Cenario 1: POST Login 200
+Cenario C1: POST Login 200
     Fazer login com usuário válido no endpoint /login
     Validar Status Code "200"
     Validar mensagem "Login realizado com sucesso"
 
-Cenario 2: POST Login 400
+Cenario C2: POST Login 400
     Fazer login com usuário inválido no endpoint /login
     Validar Status Code "400"
     Validar mensagem "E-mail e/ou senha inválidos"
 
-Cenario 3: POST Login 401
+Cenario C3: POST Login 401
     Fazer login com token expirado/inválido no endpoint /login
     Validar Status Code "401"
     Validar mensagem "Unauthorized"
 
-Cenario 4: GET Listar Usuarios 200
+Cenario C4: GET Listar Usuarios 200
     Listar usuários no endpoint /usuarios
     Validar Status Code "200"
     Validar lista de usuarios na Response
 
-Cenario 5: POST Cadastrar Usuario 201
+Cenario C5: POST Cadastrar Usuario 201
     Cadastrar usuário no endpoint /usuarios
     Validar Status Code "201"
     Validar mensagem "Cadastro realizado com sucesso"
 
-Cenario 6: POST Cadastrar Usuario 400
+Cenario C6: POST Cadastrar Usuario 400
     Cadastrar usuário com e-mail já cadastrado no endpoint /usuarios
     Validar Status Code "400"
     Validar mensagem "Este email já está sendo usado"
 
-Cenario 7: GET Buscar Usuario Por ID 200
+Cenario C7: GET Buscar Usuario Por ID 200
     Buscar usuário com ID válida no endpoint ​/usuarios​/{_id} 
     Validar Status Code "200"
     Validar usuário encontrado na Response
 
-Cenario 8: GET Buscar Usuario Por ID 400
+Cenario C8: GET Buscar Usuario Por ID 400
     Buscar usuário com ID inválida no endpoint /usuarios/{_id}
     Validar Status Code "400"
     Validar mensagem "Usuário não encontrado"
 
-Cenario 9: DELETE Excluir Usuario 200
+Cenario C9: DELETE Excluir Usuario 200
     Excluir usuário válido no endpoint /usuarios/{_id}
     Validar Status Code "200"
     Validar mensagem "Registro excluído com sucesso"
     Verificar se usuário ainda consta na Lista de Usuários
 
-Cenario 10: DELETE Excluir Usuario 400
+Cenario C10: DELETE Excluir Usuario 400
     Excluir usuário com carrinho ativo no endpoint /usuarios/{_id}
     Validar Status Code "400"
     Validar mensagem "Não é permitido excluir usuário com carrinho cadastrado"
     Verificar se usuário ainda consta na Lista de Usuários
 
-Cenario 11: PUT Editar Usuario 200
+Cenario C11: PUT Editar Usuario 200
     Editar usuário com dados válidos no endpoint ​/usuarios​/{_id}
     Validar Status Code "200"
     Validar mensagem "Registro alterado com sucesso"
 
-Cenario 12: PUT Editar Usuario 201
+Cenario C12: PUT Editar Usuario 201
     Editar usuário com ID inválida e e-mail não cadastrado no endpoint ​/usuarios​/{_id}
     Validar Status Code "201"
     Validar mensagem "Cadastro realizado com sucesso"
 
-Cenario 13: PUT Editar Usuario 400
+Cenario C13: PUT Editar Usuario 400
     Editar usuário com ID inválida e e-mail cadastrado no endpoint ​/usuarios​/{_id}
     Validar Status Code "400"
     Validar mensagem "Este email já está sendo usado"
 
-Cenario 14: GET Listar Produtos 200
+Cenario C14: GET Listar Produtos 200
     Listar produtos no endpoint /produtos
     Validar Status Code "200"
     Validar lista de produtos na Response
 
-Cenario 15: POST Cadastrar Produto 201
+Cenario C15: POST Cadastrar Produto 201
     Cadastrar produto no endpoint /produtos
     Validar Status Code "201"
     Validar mensagem "Cadastro realizado com sucesso"
 
-Cenario 16: POST Cadastrar Produto 400
+Cenario C16: POST Cadastrar Produto 400
     Cadastrar produto com nome existente no endpoint /produtos
     Validar Status Code "400"
     Validar mensagem "Já existe produto com esse nome"
 
-Cenario 17: POST Cadastrar Produto 401
+Cenario C17: POST Cadastrar Produto 401
     Cadastrar produto com token expirado/inválido no endpoint /produtos
     Validar Status Code "401"
     Validar mensagem "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"
 
-Cenario 18: POST Cadastrar Produto 403
+Cenario C18: POST Cadastrar Produto 403
     Cadastrar produto sem ser administrador no endpoint /produtos
     Validar Status Code "403"
     Validar mensagem "Rota exclusiva para administradores"
 
-Cenario 19: GET Buscar Produto Por ID 200
+Cenario C19: GET Buscar Produto Por ID 200
     Buscar produto com ID válida no endpoint ​/produtos/{_id} 
     Validar Status Code "200"
     Validar produto encontrado na Response
 
-Cenario 20: GET Buscar Produto Por ID 400
+Cenario C20: GET Buscar Produto Por ID 400
     Buscar produto com ID inválida no endpoint /produtos/{_id}
     Validar Status Code "400"
     Validar mensagem "Produto não encontrado"
 
-Cenario 21: DELETE Excluir Produto 200
+Cenario C21: DELETE Excluir Produto 200
     Excluir produto válido no endpoint /produtos/{_id}
     Validar Status Code "200"
     Validar mensagem "Registro excluído com sucesso"
 
-Cenario 22: DELETE Excluir Produto 400
+Cenario C22: DELETE Excluir Produto 400
     Excluir produto que faz parte de carrinho no endpoint /produtos/{_id}
     Validar Status Code "400"
     Validar mensagem "Não é permitido excluir produto que faz parte de carrinho"
 
-Cenario 23: DELETE Excluir Produto 401
+Cenario C23: DELETE Excluir Produto 401
     Excluir produto com token expirado/inválido no endpoint /produtos/{_id}
     Validar Status Code "401"
     Validar mensagem "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"
 
-Cenario 24: DELETE Excluir Produto 403
+Cenario C24: DELETE Excluir Produto 403
     Excluir produto sem ser administrador no endpoint /produtos/{_id}
     Validar Status Code "403"
     Validar mensagem "Rota exclusiva para administradores"
 
-Cenario 25: PUT Editar Produto 200
+Cenario C25: PUT Editar Produto 200
     Editar produto com ID válida no endpoint ​/produtos​/{_id}
     Validar Status Code "200"
     Validar mensagem "Registro alterado com sucesso"
 
-Cenario 26: PUT Editar Produto 201
+Cenario C26: PUT Editar Produto 201
     Editar produto com ID inválida e nome não utilizado no endpoint ​/produtos​/{_id}
     Validar Status Code "201"
     Validar mensagem "Cadastro realizado com sucesso"
 
-Cenario 27: PUT Editar Produto 400
+Cenario C27: PUT Editar Produto 400
     Editar produto com ID inválida e nome já utilizado no endpoint ​/produtos​/{_id}
     Validar Status Code "400"
     Validar mensagem "Já existe produto com esse nome"
 
-Cenario 28: PUT Editar Produto 401
+Cenario C28: PUT Editar Produto 401
     Editar produto com token expirado/inválido no endpoint ​/produtos​/{_id}
     Validar Status Code "401"
     Validar mensagem "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"
 
-Cenario 29: PUT Editar Produto 403
+Cenario C29: PUT Editar Produto 403
     Editar produto sem ser administrador no endpoint /produtos/{_id}
     Validar Status Code "403"
     Validar mensagem "Rota exclusiva para administradores"
 
-Cenario 30: GET Listar Carrinhos 200
+Cenario C30: GET Listar Carrinhos 200
     Listar carrinhos no endpoint /carrinhos
     Validar Status Code "200"
     Validar lista de carrinhos na Response
 
-Cenario 31: POST Cadastrar Carrinho 201
+Cenario C31: POST Cadastrar Carrinho 201
     Cadastrar carrinho para usuário válido no endpoint ​/carrinhos
     Validar Status Code "201"
     Validar mensagem "Cadastro realizado com sucesso"
     Verificar a redução da quantidade do produto no estoque
 
-Cenario 32: POST Cadastrar Carrinho 400 
+Cenario C32: POST Cadastrar Carrinho 400 
     Cadastrar mais de um carrinho para o mesmo usuário no endpoint ​/carrinhos
     Validar Status Code "400"
     Validar mensagem "Não é permitido ter mais de 1 carrinho"
 
-Cenario 33: POST Cadastrar Carrinho 401
+Cenario C33: POST Cadastrar Carrinho 401
     Cadastrar carrinho com token expirado/inválido no endpoint /carrinhos
     Validar Status Code "401"
     Validar mensagem "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"
 
-Cenario 34: GET Buscar Carrinho Por ID 200
+Cenario C34: GET Buscar Carrinho Por ID 200
     Buscar carrinho com ID válida no endpoint /carrinhos​/{_id}
     Validar Status Code "200"
     Validar carrinho encontrado na Response
 
-Cenario 35: GET Buscar Carrinho Por ID 400
+Cenario C35: GET Buscar Carrinho Por ID 400
     Buscar carrinho com ID inválida no endpoint /carrinhos​/{_id} 
     Validar Status Code "400"
     Validar mensagem "Carrinho não encontrado"
 
-Cenario 36: DELETE Excluir Carrinho Concluido 200
+Cenario C36: DELETE Excluir Carrinho Concluido 200
     Excluir carrinho com ID válida no endpoint ​/carrinhos​/concluir-compra
     Validar Status Code "200"
     Validar mensagem "Registro excluído com sucesso"
 
-Cenario 37: DELETE Excluir Carrinho Concluido 401
+Cenario C37: DELETE Excluir Carrinho Concluido 401
     Excluir carrinho com token expirado/inválido no endpoint ​/carrinhos​/concluir-compra
     Validar Status Code "401"
     Validar mensagem "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"
 
-Cenario 38: DELETE Excluir Carrinho Cancelado 200
+Cenario C38: DELETE Excluir Carrinho Cancelado 200
     Excluir carrinho com ID válida no endpoint ​/carrinhos​/cancelar-compra
     Validar Status Code "200"
     Validar mensagem "Registro excluído com sucesso"
     Verificar se itens do carrinho retornam ao estoque
 
-Cenario 39: DELETE Excluir Carrinho Cancelado 401
+Cenario C39: DELETE Excluir Carrinho Cancelado 401
     Excluir carrinho com token expirado/inválido no endpoint ​/carrinhos​/cancelar-compra
     Validar Status Code "401"
     Validar mensagem "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"
