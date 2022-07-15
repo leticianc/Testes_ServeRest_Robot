@@ -8,12 +8,12 @@ Resource            ./produtos.robot
 
 * Keywords *
 
-GET Endpoint /carrinhos
+GET Endpoint /carrinhos         #nova
     ${response}             GET On Session      serverest       /carrinhos
     Set Global Variable     ${response}
 
 
-POST Endpoint /carrinhos
+POST Endpoint /carrinhos        #AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     &{header}               Create Dictionary   Authorization=${token_auth}
     &{produtos}             Create Dictionary   idProduto=@{idProduto}    quantidade=@{quantidade}
     &{payload}              Create Dictionary   produto=@{produtos}

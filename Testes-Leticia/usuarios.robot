@@ -2,9 +2,9 @@
 Documentation   Keywords e variáveis para ações do endpoint /usuarios
 
 * Variables *
-${nome_do_usuario}      Leticia NC
+${nome_do_usuario}      Novo Usuario
 ${senha_do_usuario}     123
-${email_do_usuario}     leticia@email.com
+${email_do_usuario}     novoemail@gmail.com
 ${id_usuario}           G8l2ptKZgfQW0JkAw
 
 * Keywords *
@@ -30,7 +30,7 @@ DELETE Endpoint /usuarios
     Log to console          Response: ${response.content}
     Set Global Variable     ${response}
 
-GET Endpoint usuarios/{_id} 
+GET Endpoint usuarios/{_id}     #nova
     ${response}             GET On Session      serverest       /usuarios/${id_usuario}
     Set Global Variable     ${response}
     
