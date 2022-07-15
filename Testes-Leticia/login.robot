@@ -22,3 +22,6 @@ Fazer Login e Armazenar Token
     ${token_auth}           Set Variable    ${response.json()["authorization"]}
     Log To Console          Token Salvo: ${token_auth}
     Set Global Variable     ${token_auth}
+
+
+    #expected_status=anything
