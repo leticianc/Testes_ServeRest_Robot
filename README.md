@@ -3,10 +3,12 @@
 <div align="center"><img src="https://user-images.githubusercontent.com/106493717/176893891-701d7121-0d6c-482c-a0b9-49d7c1547cae.png" width="400" height="auto"></div>
 
 ## Introdução
-O foco da Sprint 5 foi o Robot Framework, uma ferramentas usada para automatização de testes escritos em Python. Durante a Sprint, acompanhamos o código escrito pelo evangelista Demétrio Weber e adicionamos outras funcionalidades conforme fomos adquirindo conhecimento durante as MasterClasses.
+O foco da Sprint 5 foi o Robot Framework, uma ferramentas usada para automatização de testes escritos em Python. Durante a Sprint, usamos a API ServeRest para praticar os testes e acompanhamos o código escrito pelo evangelista Demétrio Weber. Conforme adquirimos conhecimento durante as MasterClasses fomos adicionamos outras funcionalidades ao código.
 
 ## Organização do Repositório
 Esse repositório contém a pasta "Testes_aulas", onde você encontra o código passado durante as MasterClasses da Sprint 5 apresentadas pelo Demétrio, e a pasta "Testes_Leticia", com a mesma base de código mas com algumas alterações e outros testes adicionados por mim, além de um arquivo txt contendo os casos de testes possiveis para a API ServerRest, que serão escritos e adicionados ao código nos próximos dias.
+
+Veja a documentação da API ServeRest [aqui](http://serverest.dev/)
 
 ## Ferramentas Utilizadas
 
@@ -23,6 +25,7 @@ Esse repositório contém a pasta "Testes_aulas", onde você encontra o código 
 [Robot Requests](https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html) (Comando *pip install robotframework-requests* no CMD)
 
 [Robot Faker](https://pypi.org/project/robotframework-faker/) (Comando *pip install robotframework-faker* no CMD)
+
 
 
 
