@@ -6,7 +6,7 @@
 O foco da Sprint 5 foi o Robot Framework, uma ferramentas usada para automatização de testes escritos em Python. Durante a Sprint, acompanhamos o código escrito pelo evangelista Demétrio Weber e adicionamos outras funcionalidades conforme fomos adquirindo conhecimento durante as MasterClasses.
 
 ## Organização do Repositório
-Esse repositório contém a pasta "Testes_Aulas", onde você encontra o código passado durante as MasterClasses da Sprint 5 apresentadas pelo Demétrio, e a pasta "Testes_Leticia", com a mesma base de código mas com algumas alterações e outros testes adicionados por mim, além de um arquivo txt contendo os casos de testes possiveis para a API ServerRest, que serão escritos e adicionados ao código nos próximos dias.
+Esse repositório contém a pasta "Testes_aulas", onde você encontra o código passado durante as MasterClasses da Sprint 5 apresentadas pelo Demétrio, e a pasta "Testes_Leticia", com a mesma base de código mas com algumas alterações e outros testes adicionados por mim, além de um arquivo txt contendo os casos de testes possiveis para a API ServerRest, que serão escritos e adicionados ao código nos próximos dias.
 
 ## Ferramentas Utilizadas
 
