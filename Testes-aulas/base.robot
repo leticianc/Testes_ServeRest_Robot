@@ -13,8 +13,8 @@ Cenario: GET Todos os Usuarios 200
     Criar Sessao
     GET Endpoint /usuarios
     Validar Status Code "200"
-    Validar Quantidade "${5}"
-    Printar Conteudo Response
+    Validar Quantidade "${3}"
+    #Printar Conteudo Response
 
 Cenario: POST Cadastrar Usuario 201
     [tags]      POST
@@ -56,19 +56,13 @@ Cenario: DELETE Excluir Produto 200
     DELETE Endpoint /produtos
     Validar Status Code "200"
 
+Cenario: POST Criar Usuario De Massa Estatica 201
+    [tags]      POSTCRIARUSUARIOESTATICO
+    Criar Sessao
+    Criar Usuario Estatico Valido
+    Validar Status Code "201"
+
 #Sessão para criação de Keywords Personalizadas
 * Keywords *
 Criar Sessao
     Create Session          serverest   http://localhost:3000/
-
-Validar Status Code "${statuscode}"
-    Should Be True      ${response.status_code} == ${statuscode}
-
-Validar Quantidade "${quantidade}"
-    Should Be Equal     ${response.json()["quantidade"]}    ${quantidade}
-
-Validar Se Mensagem Contem "${palavra}"
-    Should Contain      ${response.json()["message"]}   ${palavra}
-
-Printar Conteudo Response
-    Log To console      Response: ${response.json()["usuarios"][1]["nome"]}
