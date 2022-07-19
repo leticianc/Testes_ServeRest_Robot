@@ -20,8 +20,6 @@ Validar Status Code "${statuscode}"
 Validar Mensagem "${mensagem}"
     Should Be Equal     ${response.json()["message"]}    ${mensagem}
 
-Printar Conteudo Response
-    Log To console      Response: ${response.json()["usuarios"]}
 
 
 * Test Cases *

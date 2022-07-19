@@ -8,10 +8,13 @@ ${email_do_usuario}     edimir@gmail.com
 ${id_usuario}           dIx281mXSPG3PWLe
 
 * Keywords *
+
+Printar Conteudo Response
+    Log To console      Response: ${response.json()["usuarios"]}
+
 GET Endpoint /usuarios
     ${response}             GET On Session      serverest       /usuarios
     Set Global Variable     ${response}
-
 
 POST Endpoint /usuarios
     &{payload}              Create Dictionary   nome=${nome_do_usuario}    email=${email_do_usuario}    password=${senha_do_usuario}    administrador=true
