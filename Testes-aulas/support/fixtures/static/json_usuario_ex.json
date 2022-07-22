@@ -1,7 +1,7 @@
 {
     "user_valido":{
-        "nome": "James Bond",
-        "email": "jamesman@gmail.com",
+        "nome": "User Static",
+        "email": "emailstatic@gmail.com",
         "password": "teste123",
         "administrador": "true"
     },

@@ -2,10 +2,10 @@
 Documentation   Keywords e variáveis para ações do endpoint /usuarios
 
 * Variables *
-${nome_do_usuario}      Edimir
-${senha_do_usuario}     123
-${email_do_usuario}     edimir@gmail.com
-${id_usuario}           dIx281mXSPG3PWLe
+${nome_do_usuario}      Fulano da Silva
+${senha_do_usuario}     teste
+${email_do_usuario}     fulano@qa.com
+${id_usuario}           
 
 * Keywords *
 
