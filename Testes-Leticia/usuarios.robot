@@ -5,7 +5,7 @@ Documentation   Keywords e variáveis para ações do endpoint /usuarios
 ${nome_do_usuario}      Fulano da Silva
 ${senha_do_usuario}     teste
 ${email_do_usuario}     fulano@qa.com
-${id_usuario}           
+${id_usuario}           6q4wIHJKMCss9dkd
 
 * Keywords *
 

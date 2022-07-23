@@ -7,13 +7,13 @@
     },
     "nome_novo":{
         "nome": "Nome Novo",
-        "email": "emailnovo@email.com",
+        "email": "emailantigo@email.com",
         "password": "teste",
         "administrador": "true"
     },
     "user_invalido":{
         "nome": "Invalido Tester",
-        "email": "fulano@qa.com.br",
+        "email": "fulano@qa.com",
         "password": "teste",
         "administrador": "true"
     }
