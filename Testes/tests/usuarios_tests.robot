@@ -9,7 +9,7 @@ Cenario C6: GET Listar Usuarios 200
     [tags]      GETUSUARIOS200
     GET Endpoint /usuarios
     Validar Status Code "200"
-    Validar Quantidade "${1}"
+    Validar Quantidade "${2}"
 
 Cenario C7: GET Buscar Usuario Por ID 200
     [tags]      GETUSUARIOSID200

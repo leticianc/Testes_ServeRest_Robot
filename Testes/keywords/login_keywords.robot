@@ -7,7 +7,13 @@ POST Endpoint /login User Valido
     ${json}                 Importar JSON Estatico      ./support/fixtures/static/json_login_ex.json
     ${payload}              Set Variable                ${json["login_valido"]}
     ${response}             POST On Session     serverest   /login   json=&{payload}
-    Should Not Be Empty     ${response.json()["authorization"]}
+    Log to console          Response: ${response.content}
+    Set Global Variable     ${response}
+
+POST Endpoint /login User Nao Administrador
+    ${json}                 Importar JSON Estatico      ./support/fixtures/static/json_login_ex.json
+    ${payload}              Set Variable                ${json["user_nao_admin"]}
+    ${response}             POST On Session     serverest   /login   json=&{payload}
     Log to console          Response: ${response.content}
     Set Global Variable     ${response}
 
@@ -40,8 +46,13 @@ POST Endpoint /login Sem Email
     Set Global Variable     ${response}
 
 Fazer Login e Armazenar Token
-    POST Endpoint /login
-    Validar Ter Logado
+    POST Endpoint /login User Valido
+    ${token_auth}           Set Variable    ${response.json()["authorization"]}
+    Log To Console          Token Salvo: ${token_auth}
+    Set Global Variable     ${token_auth}
+
+Fazer Login Não Administrador e Armazenar Token
+    POST Endpoint /login User Nao Administrador
     ${token_auth}           Set Variable    ${response.json()["authorization"]}
     Log To Console          Token Salvo: ${token_auth}
     Set Global Variable     ${token_auth}

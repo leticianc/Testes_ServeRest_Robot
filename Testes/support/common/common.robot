@@ -10,6 +10,9 @@ Validar Status Code "${statuscode}"
 Validar Mensagem "${mensagem}"
     Should Be Equal     ${response.json()["message"]}    ${mensagem}
 
+Validar Quantidade "${quantidade}"
+    Should Be Equal     ${response.json()["quantidade"]}    ${quantidade}
+    
 Importar JSON Estatico
     [Arguments]     ${nome_arquivo}
     ${arquivo}      Get File    ${EXECDIR}/${nome_arquivo}

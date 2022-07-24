@@ -55,9 +55,6 @@ DELETE Endpoint /usuarios
     Log to console          Response: ${response.content}
     Set Global Variable     ${response}
 
-Validar Quantidade "${quantidade}"
-    Should Be Equal     ${response.json()["quantidade"]}    ${quantidade}
-
 Criar Usuario Estatico e Armazenar ID
     ${json}                     Importar JSON Estatico      ./support/fixtures/static/json_usuarios_ex.json
     ${payload}                  Set Variable                ${json["user_antigo"]} 

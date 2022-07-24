@@ -18,5 +18,9 @@
     "sem_email":{
         "email":"",
         "password":"teste"
+    },
+    "user_nao_admin":{
+        "email": "naoadmin@email.com",
+        "password": "teste"
     }
 }

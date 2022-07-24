@@ -36,37 +36,37 @@ Cenario C15: DELETE Excluir Usuario 400
 
 PRODUTOS
 
-Cenario C16: GET Listar Produtos 200
+Cenario C16: GET Listar Produtos 200                OK
 
-Cenario C17: GET Buscar Produto Por ID 200
+Cenario C17: GET Buscar Produto Por ID 200          OK
 
-Cenario C18: GET Buscar Produto Por ID 400
+Cenario C18: GET Buscar Produto Por ID 400          OK
 
-Cenario C19: POST Cadastrar Produto 201
+Cenario C19: POST Cadastrar Produto 201             OK
 
-Cenario C20: POST Cadastrar Produto 400
+Cenario C20: POST Cadastrar Produto 400             OK
 
-Cenario C21: POST Cadastrar Produto 401
+Cenario C21: POST Cadastrar Produto 401             OK
 
-Cenario C22: POST Cadastrar Produto 403
+Cenario C22: POST Cadastrar Produto 403             OK
 
-Cenario C23: PUT Editar Produto 200
+Cenario C23: PUT Editar Produto 200                 OK
 
-Cenario C24: PUT Editar Produto 201
+Cenario C24: PUT Editar Produto 201                 OK
 
-Cenario C25: PUT Editar Produto 400
+Cenario C25: PUT Editar Produto 400                 OK
 
-Cenario C26: PUT Editar Produto 401
+Cenario C26: PUT Editar Produto 401                 OK
 
-Cenario C27: PUT Editar Produto 403
+Cenario C27: PUT Editar Produto 403                 OK
 
-Cenario C28: DELETE Excluir Produto 200
+Cenario C28: DELETE Excluir Produto 200             OK
 
 Cenario C29: DELETE Excluir Produto 400
 
-Cenario C30: DELETE Excluir Produto 401
+Cenario C30: DELETE Excluir Produto 401             OK
 
-Cenario C31: DELETE Excluir Produto 403
+Cenario C31: DELETE Excluir Produto 403             OK
 
 
 CARRINHOS
