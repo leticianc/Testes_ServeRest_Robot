@@ -1,93 +1,116 @@
 LOGIN
 
-Cenario C1: POST Realizar Login Valido              OK
+Cenario C1: POST Realizar Login Valido
 
-Cenario C2: POST Realizar Login Email Invalido*     OK
+Cenario C2: POST Realizar Login Email Invalido*
 
-Cenario C3: POST Realizar Login Senha Invalida*     OK
+Cenario C3: POST Realizar Login Senha Invalida*
 
-Cenario C4: POST Realizar Login Sem Email*          OK
+Cenario C4: POST Realizar Login Sem Email*
 
-Cenario C5: POST Realizar Login Sem Senha*          OK
+Cenario C5: POST Realizar Login Sem Senha*
 
 
 USUARIOS
 
-Cenario C6: GET Listar Usuarios 200                 OK
+Cenario C6: GET Listar Usuarios 200
 
-Cenario C7: GET Buscar Usuario Por ID 200           OK
+Cenario C7: GET Buscar Usuario Por ID 200
 
-Cenario C8: GET Buscar Usuario Por ID 400           OK
+Cenario C8: GET Buscar Usuario Por ID 400
 
-Cenario C9: POST Cadastrar Usuario 201              OK
+Cenario C9: POST Cadastrar Usuario 201
 
-Cenario C10: POST Cadastrar Usuario 400             OK
+Cenario C10: POST Cadastrar Usuario Sem Nome
 
-Cenario C11: PUT Editar Usuario 200                 OK
+Cenario C10: POST Cadastrar Usuario Sem Email
 
-Cenario C12: PUT Editar Usuario 201                 OK
+Cenario C10: POST Cadastrar Usuario Sem Senha
 
-Cenario C13: PUT Editar Usuario 400                 OK
+Cenario C10: POST Cadastrar Usuario Sem Administrador
 
-Cenario C14: DELETE Excluir Usuario 200             OK
+Cenario C10: POST Cadastrar Usuario Email Cadastrado
+
+Cenario C11: PUT Editar Usuario 200
+
+Cenario C12: PUT Editar Usuario 201
+
+Cenario C13: PUT Editar Usuario 400
+
+Cenario C14: DELETE Excluir Usuario 200
 
 Cenario C15: DELETE Excluir Usuario 400
 
 
 PRODUTOS
 
-Cenario C16: GET Listar Produtos 200                OK
+Cenario C16: GET Listar Produtos 200
 
-Cenario C17: GET Buscar Produto Por ID 200          OK
+Cenario C17: GET Buscar Produto Por ID 200
 
-Cenario C18: GET Buscar Produto Por ID 400          OK
+Cenario C18: GET Buscar Produto Por ID 400
 
-Cenario C19: POST Cadastrar Produto 201             OK
+Cenario C19: POST Cadastrar Produto 201
 
-Cenario C20: POST Cadastrar Produto 400             OK
+Cenario C20: POST Cadastrar Produto 400
 
-Cenario C21: POST Cadastrar Produto 401             OK
+Cenario C21: POST Cadastrar Produto Sem Nome
 
-Cenario C22: POST Cadastrar Produto 403             OK
+Cenario C22: POST Cadastrar Produto Sem Preço
 
-Cenario C23: PUT Editar Produto 200                 OK
+Cenario C23: POST Cadastrar Produto Sem Descrição
 
-Cenario C24: PUT Editar Produto 201                 OK
+Cenario C24: POST Cadastrar Produto Sem Quantidade
 
-Cenario C25: PUT Editar Produto 400                 OK
+Cenario C25: POST Cadastrar Produto Token Excluido 401
 
-Cenario C26: PUT Editar Produto 401                 OK
+Cenario C26: POST Cadastrar Produto Token Invalido 401
 
-Cenario C27: PUT Editar Produto 403                 OK
+Cenario C27: POST Cadastrar Produto 403
 
-Cenario C28: DELETE Excluir Produto 200             OK
+Cenario C28: PUT Editar Produto 200
 
-Cenario C29: DELETE Excluir Produto 400
+Cenario C29: PUT Editar Produto 201
 
-Cenario C30: DELETE Excluir Produto 401             OK
+Cenario C30: PUT Editar Produto 400
 
-Cenario C31: DELETE Excluir Produto 403             OK
+Cenario C31: PUT Editar Produto 401
+
+Cenario C32: PUT Editar Produto 403
+
+Cenario C33: DELETE Excluir Produto 200
+
+Cenario C34: DELETE Excluir Produto 400
+
+Cenario C35: DELETE Excluir Produto 401
+
+Cenario C36: DELETE Excluir Produto 403
 
 
 CARRINHOS
 
-Cenario C32: GET Listar Carrinhos 
+Cenario C37: GET Listar Carrinhos 200
 
-Cenario C33: GET Buscar Carrinho Por ID 200
+Cenario C38: GET Buscar Carrinho Por ID 200
 
-Cenario C34: GET Buscar Carrinho Por ID 400
+Cenario C39: GET Buscar Carrinho Por ID 400
 
-Cenario C35: POST Cadastrar Carrinho 201
+Cenario C40: POST Cadastrar Carrinho 201
 
-Cenario C36: POST Cadastrar Carrinho 400 
+Cenario C41: POST Carrinho Produto Duplicado 400 
 
-Cenario C37: POST Cadastrar Carrinho 401
+Cenario C42: POST Mais de Um Carrinho 400
 
-Cenario C38: DELETE Excluir Carrinho Concluido 200
+Cenario C43: POST Carrinho Com Quantidade Insuficiente 400 
 
-Cenario C39: DELETE Excluir Carrinho Concluido 401
+Cenario C44: POST Carrinho Produto Não Encontrado 400
 
-Cenario C40: DELETE Excluir Carrinho Cancelado 200
+Cenario C45: POST Cadastrar Carrinho 401
 
-Cenario C41: DELETE Excluir Carrinho Cancelado 401
+Cenario C46: DELETE Excluir Carrinho Concluido 200
 
+Cenario C47: DELETE Excluir Carrinho Concluido 401
+
+Cenario C48: DELETE Excluir Carrinho Cancelado 200
+
+Cenario C49: DELETE Excluir Carrinho Cancelado 401

@@ -1,6 +1,7 @@
 * Settings *
 Documentation       Arquivo de testes para endpoint /usuarios
 Resource            ../keywords/usuarios_keywords.robot
+Resource            ../keywords/carrinhos_keywords.robot
 Suite Setup         Criar Sessao
 
 * Test Cases *
@@ -9,13 +10,15 @@ Cenario C6: GET Listar Usuarios 200
     [tags]      GETUSUARIOS200
     GET Endpoint /usuarios
     Validar Status Code "200"
-    Validar Quantidade "${2}"
+    Printar Resposta
+    Validar Quantidade "${1}"
 
 Cenario C7: GET Buscar Usuario Por ID 200
     [tags]      GETUSUARIOSID200
     Criar Usuario Dinamico e Armazenar ID
     GET Endpoint usuarios/{_id}
     Validar Status Code "200"
+    Printar Resposta    
     DELETE Endpoint /usuarios
 
 Cenario C8: GET Buscar Usuario Por ID 400
@@ -61,23 +64,26 @@ Cenario C13: PUT Editar Usuario 400
 
 Cenario C14: DELETE Excluir Usuario 200
     [tags]      DELETEUSUARIOS200
+    Criar U
     Criar Usuario Dinamico e Armazenar ID
     DELETE Endpoint /usuarios
     Validar Status Code "200" 
     Validar Mensagem "Registro excluído com sucesso"
     # buscar usuário pela ID, achar uma keyword para "não deve ser encontrado" ou algo assim
 
-#Cenario C15: DELETE Excluir Usuario 400
-#    [tags]      DELETEUSUARIOS400
-#    Criar Usuario Dinamico e Armazenar ID
-#    Criar Carrinho Para Usuario
-#    DELETE Endpoint /usuarios
-#    Validar Status Code "400" 
-#    Validar Mensagem "Não é permitido excluir usuário com carrinho cadastrado"
-#    DELETE Endpoint /carrinhos
-#    DELETE Endpoint /usuarios
+Cenario C15: DELETE Excluir Usuario 400
+    [tags]      DELETEUSUARIOS400
+    Criar Usuario Dinamico e Armazenar ID e Email
+    POST Endpoint /login User Dinamico
+    Criar Carrinho Estatico e Armazenar ID
+    DELETE Endpoint /usuarios
+    Validar Mensagem "Não é permitido excluir usuário com carrinho cadastrado"
+    Validar Status Code "400" 
+    DELETE Endpoint /carrinhos/cancelar-compra
+    DELETE Endpoint /usuarios
 
 Deletando Pela ID
     [tags]      DELETE
-    Deletar Pela ID
+    Deletar Usuario Pela ID
+    Printar Resposta
 

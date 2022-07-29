@@ -1,30 +1,26 @@
 {
-    "login_valido":{
-        "email":"fulano@qa.com",
-        "password":"teste"
-    },
-    "email_invalido":{
+    "emailinvalido":{
         "email":"emailinexistente@mail.com",
         "password":"teste"
     },
-    "senha_invalida":{
+    "senhainvalida":{
         "email":"fulano@qa.com",
         "password":"teste123"
     },
-    "sem_senha":{
-        "email":"fulano@qa.com",
-        "password":""
-    },
-    "sem_email":{
+    "sememail":{
         "email":"",
         "password":"teste"
     },
+    "semsenha":{
+        "email":"fulano@qa.com",
+        "password":""
+    },
+    "vazio":{
+        "email":"",
+        "password":""
+    },
     "user_nao_admin":{
         "email": "nsouadmin@email.com",
-        "password": "teste"
-    },
-    "login_rapido":{
-        "email": "cynthia32@example.com",
         "password": "senha123"
     }
 }

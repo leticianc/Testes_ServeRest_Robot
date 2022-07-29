@@ -1,0 +1,38 @@
+{
+    "semnome":{
+        "nome": "",
+        "email": "email@email.com",
+        "password": "teste",
+        "administrador": "true"  
+    },
+    "sememail":{
+        "nome": "Nome",
+        "email": "",
+        "password": "teste",
+        "administrador": "true"
+    },
+    "semsenha":{
+        "nome": "Nome",
+        "email": "email@email.com",
+        "password": "",
+        "administrador": "true"
+    },
+    "semadmin":{
+        "nome": "Nome",
+        "email": "email@email.com",
+        "password": "teste",
+        "administrador": ""
+    },
+    "user_invalido":{
+        "nome": "Invalido Tester",
+        "email": "fulano@qa.com",
+        "password": "teste",
+        "administrador": "true"
+    },
+    "user_nao_admin":{
+        "nome": "Nao Admin",
+        "email": "nsouadmin@email.com",
+        "password": "senha123",
+        "administrador": "false"
+    }
+}

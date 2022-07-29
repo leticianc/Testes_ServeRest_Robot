@@ -2,9 +2,10 @@
 Documentation   Keywords e variáveis para ações do endpoint /produtos
 Resource        ../support/base.robot
 Resource        ../keywords/login_keywords.robot
+Resource        ../keywords/usuarios_keywords.robot
 
 * Variables *
-${id_produto}           1cf0KLZ4Ye9GomRo
+${id_produto}           
 ${token_invalido}       000000000000000000000
 
 * Keywords *
@@ -20,14 +21,12 @@ GET Endpoint produtos/{_id}
 POST Endpoint /produtos
     &{header}               Create Dictionary   Authorization=${token_auth}
     ${response}             POST On Session     serverest   /produtos   json=&{payload}     headers=${header}   expected_status=anything
-    Log to console          Response: ${response.content}
     Set Global Variable     ${response}
 
 POST Endpoint /produtos Sem Token
     &{header}               Create Dictionary   Authorization=${token_invalido}
     &{payload}              Create Dictionary   nome=produto   preco=100   descricao=descricao     quantidade=10
     ${response}             POST On Session     serverest   /produtos   json=&{payload}     headers=${header}   expected_status=anything
-    Log to console          Response: ${response.content}
     Set Global Variable     ${response}
 
 POST Produto Existente
@@ -41,7 +40,6 @@ PUT Endpoint /produtos
     ${json}                 Importar JSON Estatico      ./support/fixtures/static/json_produtos_ex.json
     ${payload}              Set Variable                ${json["produto2"]}
     ${response}             PUT On Session      serverest       /produtos/${id_produto}    json=&{payload}  headers=${header}   expected_status=anything
-    Log to console          Response: ${response.content}
     Set Global Variable     ${response}
     Set Global Variable     ${id_produto}
 
@@ -51,35 +49,35 @@ PUT Endpoint /produtos Cadastro
     ${payload}              Set Variable                ${json["produto2"]}
     ${response}             PUT On Session      serverest       /produtos/${id_produto}    json=&{payload}  headers=${header}
     ${id_produto}           Set Variable                ${response.json()["_id"]}
-    Log to console          Response: ${response.content}
     Set Global Variable     ${response}
     Set Global Variable     ${id_produto}
 
-PUT Endpoint /usuarios Invalido
+PUT Endpoint /produtos Invalido
     &{header}               Create Dictionary   Authorization=${token_auth}
     ${json}                 Importar JSON Estatico      ./support/fixtures/static/json_produtos_ex.json
     ${payload}              Set Variable                ${json["produto_existente"]}
     ${response}             PUT On Session      serverest       /produtos/${id_produto}    json=&{payload}  headers=${header}   expected_status=anything 
-    Log to console          Response: ${response.content}
     Set Global Variable     ${response}
 
 PUT Endpoint /produtos Sem Token
     &{header}               Create Dictionary   Authorization=${token_invalido}
     &{payload}              Create Dictionary   nome=produto   preco=100   descricao=descricao     quantidade=10
     ${response}             PUT On Session      serverest   /produtos/${id_produto}     json=&{payload}     headers=${header}   expected_status=anything
-    Log to console          Response: ${response.content}
     Set Global Variable     ${response}
 
 DELETE Endpoint /produtos
     &{header}               Create Dictionary   Authorization=${token_auth}
     ${response}             DELETE On Session     serverest   /produtos/${id_produto}    headers=${header}      expected_status=anything
-    Log to console          Response: ${response.content}
+    Set Global Variable     ${response}
+
+DELETE Produto Carrinho
+    &{header}               Create Dictionary   Authorization=${token_auth}
+    ${response}             DELETE On Session     serverest   /produtos/BeeJh5lz3k6kSIzA    headers=${header}      expected_status=anything
     Set Global Variable     ${response}
 
 DELETE Endpoint /produtos Sem Token
     &{header}               Create Dictionary   Authorization=${token_invalido}
     ${response}             DELETE On Session     serverest   /produtos/${id_produto}    headers=${header}      expected_status=anything
-    Log to console          Response: ${response.content}
     Set Global Variable     ${response}
 
 Criar Produto Estatico
@@ -96,8 +94,7 @@ Criar Produto Estatico e Armazenar ID
     ${id_produto}               Set Variable                ${response.json()["_id"]}
     Set Global Variable         ${id_produto}
 
-Deletar Pela ID
+Deletar Produto Pela ID
     &{header}               Create Dictionary   Authorization=${token_auth}    
     ${response}             DELETE On Session   serverest   /produtos/${id_produto}     headers=${header}
-    Log to console          Response: ${response.content}
     Set Global Variable     ${response}

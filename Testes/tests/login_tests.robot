@@ -9,20 +9,19 @@ Cenario C1: Realizar Login Valido
     [tags]      LOGINVALIDO
     POST Endpoint /login User Valido
     Validar Status Code "200"
-    Validar Mensagem "Login realizado com sucesso"
-    Validar Ter Logado
+    Validar Mensagem "Login realizado com sucesso"    
 
-Cenario C2: Realizar Login Email Invalido  #status code 401 != 400
+Cenario C2: Realizar Login Email Invalido 400  #status code 401 != 400
     [tags]      LOGINEMAILINVALIDO
     POST Endpoint /login Email Invalido
-    Validar Status Code "401"
-    Validar Mensagem "Email e/ou senha inválidos"
+    Validar Mensagem "Email e/ou senha inválidos"    
+    Validar Status Code "400"
 
-Cenario C3: Realizar Login Senha Invalida  #status code 401 != 400
+Cenario C3: Realizar Login Senha Invalida 400   #status code 401 != 400
     [tags]      LOGINSENHAINVALIDA
     POST Endpoint /login Senha Invalida
-    Validar Status Code "401"
-    Validar Mensagem "Email e/ou senha inválidos"
+    Validar Mensagem "Email e/ou senha inválidos"    
+    Validar Status Code "400"
 
 Cenario C4: Realizar Login Sem Email    #possibilidade não documentada
     [tags]      LOGINSEMEMAIL

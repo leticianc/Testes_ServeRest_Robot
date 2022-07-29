@@ -16,5 +16,11 @@
         "email": "fulano@qa.com",
         "password": "teste",
         "administrador": "true"
+    },
+    "user_nao_admin":{
+        "nome": "Não Admin",
+        "email": "nsouadmin@email.com",
+        "password": "teste",
+        "administrador": "false"
     }
 }

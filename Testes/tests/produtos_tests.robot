@@ -8,6 +8,7 @@ Cenario C16: GET Listar Produtos 200
     [tags]      GETPRODUTOS200
     GET Endpoint /produtos
     Validar Status Code "200"
+    Printar Resposta
     Validar Quantidade "${2}"    
 
 Cenario C17: GET Buscar Produto Por ID 200
@@ -16,6 +17,7 @@ Cenario C17: GET Buscar Produto Por ID 200
     Criar Produto Estatico e Armazenar ID
     GET Endpoint produtos/{_id}
     Validar Status Code "200"
+    Printar Resposta
     DELETE Endpoint /produtos
 
 Cenario C18: GET Buscar Produto Por ID 400
@@ -47,10 +49,12 @@ Cenario C21: POST Cadastrar Produto 401
 
 Cenario C22: POST Cadastrar Produto 403
     [tags]      POSTPRODUTOS403
+    Criar Usuario Não Administrador e Armazenar ID
     Fazer Login Não Administrador e Armazenar Token
     Criar Produto Estatico
     Validar Status Code "403"
     Validar Mensagem "Rota exclusiva para administradores"
+    DELETE Endpoint /usuarios     
 
 Cenario C23: PUT Editar Produto 200
     [tags]      PUTPRODUTOS200
@@ -72,7 +76,7 @@ Cenario C24: PUT Editar Produto 201
 Cenario C25: PUT Editar Produto 400
     [tags]      PUTPRODUTOS400
     Fazer Login e Armazenar Token
-    PUT Endpoint /usuarios Invalido
+    PUT Endpoint /produtos Invalido
     Validar Status Code "400"
     Validar Mensagem "Já existe produto com esse nome"
 
@@ -84,10 +88,10 @@ Cenario C26: PUT Editar Produto 401
 
 Cenario C27: PUT Editar Produto 403
     [tags]      PUTPRODUTOS403
+    Criar Usuario Não Administrador e Armazenar ID
     Fazer Login Não Administrador e Armazenar Token
     PUT Endpoint /produtos
-    Validar Status Code "403"
-    Validar Mensagem "Rota exclusiva para administradores"
+DD
 
 Cenario C28: DELETE Excluir Produto 200
     [tags]      DELETEPRODUTOS200
@@ -97,8 +101,12 @@ Cenario C28: DELETE Excluir Produto 200
     Validar Status Code "200"
     Validar Mensagem "Registro excluído com sucesso"
 
-#Cenario C29: DELETE Excluir Produto 400
-    #carrinho
+Cenario C29: DELETE Excluir Produto 400
+    [tags]      DELETEPRODUTOS400
+    Fazer Login e Armazenar Token 
+    DELETE Produto Carrinho
+    Validar Status Code "400"
+    Validar Mensagem "Não é permitido excluir produto que faz parte de carrinho"    
 
 Cenario C30: DELETE Excluir Produto 401
     [tags]      DELETEPRODUTOS401
@@ -108,12 +116,18 @@ Cenario C30: DELETE Excluir Produto 401
 
 Cenario C31: DELETE Excluir Produto 403
     [tags]      DELETEPRODUTOS403
+    Criar Usuario Não Administrador e Armazenar ID    
     Fazer Login Não Administrador e Armazenar Token
     DELETE Endpoint /produtos
     Validar Status Code "403"
     Validar Mensagem "Rota exclusiva para administradores"
+    DELETE Endpoint /usuarios
 
-Deletando Pela ID
+DeletandoS Pela ID
     [tags]      DELETE
     Fazer Login e Armazenar Token
-    Deletar Pela ID
+    Deletar Produto Pela ID
+    Printar Resposta
+
+Teste Apenas
+    [tags]      SERA
