@@ -1,26 +1,27 @@
 {
-    "emailinvalido":{
+    "Email_Invalido":{
         "email":"emailinexistente@mail.com",
         "password":"teste"
     },
-    "senhainvalida":{
+    "Senha_Invalida":{
         "email":"fulano@qa.com",
         "password":"teste123"
     },
-    "sememail":{
+    "Sem_Email":{
         "email":"",
         "password":"teste"
     },
-    "semsenha":{
+    "Sem_Senha":{
         "email":"fulano@qa.com",
         "password":""
     },
-    "vazio":{
+    "Sem_Dados":{
         "email":"",
         "password":""
     },
     "user_nao_admin":{
         "email": "nsouadmin@email.com",
         "password": "senha123"
-    }
+    },
+    "token_invalido": "00000000000"
 }

@@ -11,23 +11,25 @@ Cenario C7: GET Listar Usuarios 200
 
 Cenario C8: GET Buscar Usuario Por ID 200
     [tags]      C8
-    Criar Usuario Dinamico e Armazenar Dados
+    POST Criar Usuario Dinamico
     GET Endpoint usuarios/{_id}
+    Mostrar Response
     Validar Status Code "200"
     DELETE Endpoint /usuarios
 
 Cenario C9: GET Buscar Usuario Com ID Invalida 400
     [tags]      C9
+    Definir ID Usuario Inválida
     GET Endpoint usuarios/{_id}
     Validar Mensagem "Usuário não encontrado"
     Validar Status Code "400"
 
 Cenario C10: POST Cadastrar Usuario 201
     [tags]      C10
-    Criar Usuario Dinamico e Armazenar Dados
+    POST Criar Usuario Dinamico
     Mostrar Usuario
     Validar Mensagem "Cadastro realizado com sucesso"
-    Validar Status Code "201"
+    Validar Status Code "201"  
     DELETE Endpoint /usuarios
 
 Cenario C11: POST Cadastrar Usuario Sem Nome
@@ -63,36 +65,44 @@ Cenario C15: POST Cadastrar Usuario Email Cadastrado 400
 
 Cenario C16: PUT Editar Usuario 200
     [tags]      C16
-    Criar Usuario Dinamico e Armazenar Dados
+    POST Criar Usuario Dinamico
     Mostrar Usuario
-    PUT Endpoint /usuarios    
+    PUT Endpoint /usuarios
     Mostrar Usuario
-    Validar Mensagem "Registro alterado com sucesso" 
+    Validar Mensagem "Registro alterado com sucesso"
     Validar Status Code "200"
     DELETE Endpoint /usuarios
 
-Cenario C17: PUT Editar Usuario 201
+Cenario C17: PUT Editar Novo Usuario 201
     [tags]      C17
-    PUT Endpoint /usuarios Cadastro    
+    Definir ID Usuario Inválida
+    PUT Endpoint /usuarios
+    Armazenar ID
     Mostrar Usuario
-    Validar Mensagem "Cadastro realizado com sucesso" 
+    Validar Mensagem "Cadastro realizado com sucesso"
     Validar Status Code "201"
     DELETE Endpoint /usuarios
 
-Cenario C18: PUT Editar Usuario 400
+Cenario C18: PUT Editar Novo Usuario Com Email Cadastrado 400
     [tags]      C18
+    Definir ID Usuario Inválida
     PUT Usuario Email Cadastrado
-    Validar Mensagem "Este email já está sendo usado" 
+    Mostrar Payload
+    Validar Mensagem "Este email já está sendo usado"
     Validar Status Code "400"
-    DELETE Endpoint /usuarios   
 
 Cenario C19: DELETE Excluir Usuario 200
     [tags]      C19
-    Criar Usuario Dinamico e Armazenar Dados    
+    POST Criar Usuario Dinamico
     DELETE Endpoint /usuarios
-    Validar Mensagem "Registro excluído com sucesso" 
+    Validar Mensagem "Registro excluído com sucesso"
     Validar Status Code "200"
     Verificar Se Usuario Foi Deletado
 
-#Cenario C20: DELETE Excluir Usuario Com Carrinho 400
-  #  [tags]      C20
+Cenario C20: DELETE Excluir Usuario Com Carrinho 400
+    [tags]      C20
+    Criar Carrinho Dinamico
+    DELETE Endpoint /usuarios
+    Validar Mensagem "Não é permitido excluir usuário com carrinho cadastrado"
+    Validar Status Code "400"
+    Deletar Dados da Base
