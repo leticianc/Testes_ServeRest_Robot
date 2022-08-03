@@ -246,9 +246,11 @@ Clique no endpoint desejado para ver os cenários de testes, suas tags e uma com
 
 [Demétrio Webber](https://github.com/DemetrioWebber) - Conhecimento obtido nas MasterClasses e inspiração para base do meu código.
 
-[Matheus Locatelli](https://github.com/matheuslocatelli) - Dicas e esclarecimento de dúvidas durante a mentoria e diariamente na daily. 
+[Matheus Locatelli](https://github.com/matheuslocatelli) - Dicas e esclarecimento de dúvidas durante a mentoria e dailies. 
 
 [Emily Lanzarin](https://github.com/eslanzarin) - Ajuda na elaboração dos testes e do ReadMe.
+
+[Amanda Bressam](https://github.com/abressam) e [Beatriz Jardim](https://github.com/BeatrizJardimm) - As ideias compartilhadas por elas nas dailies me inspiraram e ajudaram muito. 
 
 [Bianca Campos](https://youtube.com/playlist?list=PL5ipcSFH2tk8RWxtvuaOK-qpdAvlWkSoo) - Curso de Robot Framework.
 
