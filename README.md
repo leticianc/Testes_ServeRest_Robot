@@ -11,14 +11,14 @@ Esse repositório apresenta o último Challenge do Programa de Bolsas RoboTron. 
 ![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
 
 ## Conteúdos
-- [Sobre a API ServeRest](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#sobre-a-api-serverest)
-- [Ferramentas e Libraries necessárias](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#ferramentas-e-libraries-necess%C3%A1rias)
-- [Organização do repositório](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#organiza%C3%A7%C3%A3o-do-reposit%C3%B3rio)
-- [Baixando o repositório](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#baixando-o-reposit%C3%B3rio)
-- [Rodando os testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#rodando-os-testes)
-- [Relatório de testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#relat%C3%B3rio-de-testes)
-- [Créditos](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#cr%C3%A9ditos)
-- [Agradecimentos](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#agradecimentos)
+- [Sobre a API ServeRest](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/main/README.md#sobre-a-api-serverest)
+- [Ferramentas e Libraries necessárias](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/main/README.md#ferramentas-e-libraries-necess%C3%A1rias)
+- [Organização do repositório](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/main/README.md#organiza%C3%A7%C3%A3o-do-reposit%C3%B3rio)
+- [Baixando o repositório](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/main/README.md#baixando-o-reposit%C3%B3rio)
+- [Rodando os testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/main/README.md#rodando-os-testes)
+- [Relatório de testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/main/README.md#relat%C3%B3rio-de-testes)
+- [Créditos](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/main/README.md#cr%C3%A9ditos)
+- [Agradecimentos](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/main/README.md#agradecimentos)
 
 ![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
 
