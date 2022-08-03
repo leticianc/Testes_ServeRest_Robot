@@ -6,18 +6,19 @@
 ![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
 
 ## Introdução
-Esse repositório apresenta o último Challenge do Programa de Bolsas RoboTron. O projeto está organizado no padrão Service-Objects conforme foi orientado pelo Scrum Master Demétrio Webber e apresenta testes para todos os endpoints da API ServeRest, utilizando Robot Framework. Abaixo você encontra instruções para instalar e rodar os testes em seu computador, além de informações sobre a API ServeRest e sobre os cenários de testes criados por mim.
+Esse repositório apresenta o último Challenge do Programa de Bolsas RoboTron. O projeto contém cenários de testes para todos os endpoints da API ServeRest, utilizando Robot Framework. Abaixo você encontra instruções para instalar e rodar os testes em seu computador, além de informações sobre a API ServeRest e sobre os cenários de testes criados por mim.
 
 ![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
 
 ## Conteúdos
 - [Sobre a API ServeRest](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#sobre-a-api-serverest)
 - [Ferramentas e Libraries necessárias](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#ferramentas-e-libraries-necess%C3%A1rias)
+- [Organização do repositório](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#organiza%C3%A7%C3%A3o-do-reposit%C3%B3rio)
 - [Baixando o repositório](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#baixando-o-reposit%C3%B3rio)
 - [Rodando os testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#rodando-os-testes)
-- [Relatório de testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#sobre-os-testes)
+- [Relatório de testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#relat%C3%B3rio-de-testes)
 - [Créditos](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#cr%C3%A9ditos)
-- [Agradecimentos]()
+- [Agradecimentos](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/edit/main/README.md#agradecimentos)
 
 ![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
 
@@ -91,7 +92,16 @@ pip install rpaframework
 
 ![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
 
+## Organização do repositório
+
+A pasta principal desse repositório apresenta o mapa mental da API ServeRest e a pasta `Testes`. A pasta `Testes` está organizada no padrão Service-Objects conforme foi orientado pelo Scrum Master Demétrio Webber, e dentro dela estão as pastas `Keywords`, com as keywords utilizadas nos cenários de testes, a pasta `Support`, com todas os arquivos necessários para auxiliar a criação dos cenários de testes, a pasta `Reports`, onde fica armazenado o resultado detalhado dos testes que foram executados, e a pasta  `testes`, com os cenários de testes de cada endpoint.
+
+![image](https://user-images.githubusercontent.com/106493717/182511338-f0b3659f-630a-45ca-89c6-b07b2cb776c5.png)
+
+![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+
 ## Baixando o repositório
+
 Para baixar o repositório, [clique aqui](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/archive/refs/heads/main.zip) ou siga os passos abaixo
 
 - Na página inicial do repositório, clique em `Code`, em seguida, clique em `download ZIP`
@@ -131,7 +141,7 @@ robot -d ./reports testes/usuarios_tests.robot
 
 - Para executar um teste específico, você pode usar o comando `robot -d ./reports -i 'tag' testes/'endpoint'_tests.robot` substitundo o 'endpoint' pelo endpoint do teste desejado, e 'tag' pela sua tag 
 
-*no próximo tópico você encontrará todos os cenários de testes e suas respectivas tags* 
+*No próximo tópico você encontrará todos os cenários de testes e suas respectivas tags* 
 
 ![image](https://user-images.githubusercontent.com/106493717/182494886-7885a4a7-08ab-4587-a40f-9cb876c47187.png)
 
@@ -144,16 +154,109 @@ robot -d ./reports -i -C35 testes/produtos_tests.robot
 
 ## Relatório de testes
 
+Clique no endpoint desejado para ver os cenários de testes, suas tags e uma comparação dos resultados obtidos com os resultados previstos na documentação da API.  
+
+<details><summary>Endpoint /login</summary>
+
+|Cenário|Tag|Esperado|Retornado|
+|---|---|---|---|
+|C1: POST Fazer Login 200|C1|Status Code: 200 <br /> Mensagem: "Login realizado com sucesso"|Status Code: 200 <br /> Mensagem: "Login realizado com sucesso"|
+|C2: POST Fazer Login Email Invalido 400|C2|Status Code: 400 <br /> Mensagem: "Email e/ou senha inválidos"|Status Code: 401 <br /> Mensagem: "Email e/ou senha inválidos"|
+|C3: POST Fazer Login Senha Invalida 400|C3|Status Code: 400 <br /> Mensagem: "Email e/ou senha inválidos"|Status Code: 401 <br /> Mensagem: "Email e/ou senha inválidos"|
+|C4: POST Fazer Login Sem Email|C4|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "email não pode ficar em branco"|
+|C5: POST Fazer Login Sem Senha|C5|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "password não pode ficar em branco"|
+|C6: POST Fazer Login Sem Dados|C6|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "email não pode ficar em branco", "password não pode ficar em branco"|
+</details>  
+
+<details><summary>Endpoint /usuarios</summary>
+
+|Cenário|Tag|Esperado|Retornado|
+|---|---|---|---|
+|C7: GET Listar Usuarios 200|C7|Status Code: 200|Status Code: 200|
+|C8: GET Buscar Usuario Por ID 200|C8|Status Code: 200|Status Code: 200|
+|C9: GET Buscar Usuario Com ID Invalida 400|C9|Status Code: 400 <br /> Mensagem: "Usuário não encontrado"|Status Code: 400 <br /> Mensagem: "Usuário não encontrado"|
+|C10: POST Cadastrar Usuario 201|C10|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|
+|C11: POST Cadastrar Usuario Sem Nome|C11|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "nome não pode ficar em branco"|
+|C12: POST Cadastrar Usuario Sem Email|C12|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "email não pode ficar em branco"|
+|C13: POST Cadastrar Usuario Sem Senha|C13|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "password não pode ficar em branco"|
+|C14: POST Cadastrar Usuario Sem Administrador|C14|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "administrador deve ser 'true' ou 'false"|
+|C15: POST Cadastrar Usuario Email Cadastrado 400|C15|Status Code: 400 <br /> Mensagem: "Este email já está sendo usado"|Status Code: 400 <br /> Mensagem: "Este email já está sendo usado"|
+|C16: PUT Editar Usuario 200|C16|Status Code: 200 <br /> Mensagem: "Registro alterado com sucesso"|Status Code: 200 <br /> Mensagem: "Registro alterado com sucesso"|
+|C17: PUT Editar Novo Usuario 201|C17|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|
+|C18: PUT Editar Novo Usuario Com Email Cadastrado 400|C18|Status Code: 400 <br /> Mensagem: "Este email já está sendo usado"|Status Code: 400 <br /> Mensagem: "Este email já está sendo usado"|
+|C19: DELETE Excluir Usuario 200|C19|Status Code: 200 <br /> Mensagem: "Registro excluído com sucesso"|Status Code: 200 <br /> Mensagem: "Registro excluído com sucesso"|
+|C20: DELETE Excluir Usuario Com Carrinho 400|C20|Status Code: 400 <br /> Mensagem: "Não é permitido excluir usuário com carrinho cadastrado"|Status Code: 400 <br /> Mensagem: "Não é permitido excluir usuário com carrinho cadastrado"|
+</details> 
+
+<details><summary>Endpoint /produtos</summary>
+
+|Cenário|Tag|Esperado|Retornado|
+|---|---|---|---|
+|C21: GET Listar Produtos 200|C21|Status Code: 200|Status Code: 200|
+|C22: GET Buscar Produto Por ID 200|C22|Status Code: 200|Status Code: 200|
+|C23: GET Buscar Produto Com ID Invalida 400|C23|Status Code: 400 <br /> Mensagem: "Produto não encontrado"|Status Code: 400 <br /> Mensagem: "Produto não encontrado"|
+|C24: POST Cadastrar Produto 201|C24|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|
+|C25: POST Cadastrar Produto Com Nome Existente 400|C25|Status Code: 400 <br /> Mensagem: "Já existe produto com esse nome"|Status Code: 400 <br /> Mensagem: "Já existe produto com esse nome"|
+|C26: POST Cadastrar Produto Sem Nome|C26|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "nome não pode ficar em branco"|
+|C27: POST Cadastrar Produto Sem Preco|C27|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "preco deve ser um número"|
+|C28: POST Cadastrar Produto Sem Descrição|C28|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "descricao não pode ficar em branco"|
+|C29: POST Cadastrar Produto Sem Quantidade|C29|Possibilidade não documentada|Status Code: 400 <br /> Mensagem: "quantidade deve ser um número"|
+|C30: POST Cadastrar Produto Token Excluido 401|C30|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|
+|C31: POST Cadastrar Produto Token Invalido 401|C31|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|
+|C32: POST Cadastrar Produto Sem Ser Administrador 403|C32|Status Code: 403 <br /> Mensagem: "Rota exclusiva para administradores"|Status Code: 403 <br /> Mensagem: "Rota exclusiva para administradores"|
+|C33: PUT Editar Produto 200|C33|Status Code: 200 <br /> Mensagem: "Registro alterado com sucesso"|Status Code: 200 <br /> Mensagem: "Registro alterado com sucesso"|
+|C34: PUT Editar Novo Produto 201|C34|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|
+|C35: PUT Editar Novo Produto Com Nome Existente 400|C35|Status Code: 400 <br /> Mensagem: "Já existe produto com esse nome"|Status Code: 400 <br /> Mensagem: "Já existe produto com esse nome"|
+|C36: PUT Editar Produto Sem Token 401|C36|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|
+|C37: PUT Editar Produto Sem Ser Administrador 403|C37|Status Code: 403 <br /> Mensagem: "Rota exclusiva para administradores"|Status Code: 403 <br /> Mensagem: "Rota exclusiva para administradores"|
+|C38: DELETE Excluir Produto 200|C38|Status Code: 200 <br /> Mensagem: "Registro excluído com sucesso"|Status Code: 200 <br /> Mensagem: "Registro excluído com sucesso"|
+|C39: DELETE Excluir Produto em Carrinho 400|C39|Status Code: 400 <br /> Mensagem: "Não é permitido excluir produto que faz parte de carrinho"|Status Code: 400 <br /> Mensagem: "Não é permitido excluir produto que faz parte de carrinho"|
+|C40: DELETE Excluir Produto Sem Token 401|C40|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|
+|C41: DELETE Excluir Produto Sem Ser Administrador 403|C41|Status Code: 403 <br /> Mensagem: "Rota exclusiva para administradores"|Status Code: 403 <br /> Mensagem: "Rota exclusiva para administradores"|
+</details> 
+
+<details><summary>Endpoint /carrinhos</summary>
+
+|Cenário|Tag|Esperado|Retornado|
+|---|---|---|---|
+|C42: GET Listar Carrinhos 200|C42|Status Code: 200|Status Code: 200|
+|C43: GET Buscar Carrinho Por ID|C43|Status Code: 200|Status Code: 200|
+|C44: GET Buscar Carrinho Com ID Invalida 400|C44|Status Code: 400 <br /> Mensagem: "Carrinho não encontrado"|Status Code: 400 <br /> Mensagem: "Carrinho não encontrado"|
+|C45: POST Cadastrar Carrinho 201|C45|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|Status Code: 201 <br /> Mensagem: "Cadastro realizado com sucesso"|
+|C46: POST Carrinho Produto Duplicado 400|C46|Status Code: 400 <br /> Mensagem: "Não é permitido possuir produto duplicado"|Status Code: 400 <br /> Mensagem: "Não é permitido possuir produto duplicado"|
+|C47: POST Mais de Um Carrinho 400|C47|Status Code: 400 <br /> Mensagem: "Não é permitido ter mais de 1 carrinho"|Status Code: 400 <br /> Mensagem: "Não é permitido ter mais de 1 carrinho"|
+|C48: POST Carrinho Com Quantidade Insuficiente 400|C48|Status Code: 400 <br /> Mensagem: "Produto não possui quantidade suficiente"|Status Code: 400 <br /> Mensagem: "Produto não possui quantidade suficiente"|
+|C49: POST Carrinho Produto Não Encontrado 400|C49|Status Code: 400 <br /> Mensagem: "Produto não encontrado"|Status Code: 400 <br /> Mensagem: "Produto não encontrado"|
+|C50: POST Cadastrar Carrinho Sem Token 401|C50|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|
+|C51: DELETE Excluir Carrinho Concluido 200|C51|Status Code: 200 <br /> Mensagem: "Registro excluído com sucesso"|Status Code: 200 <br /> Mensagem: "Registro excluído com sucesso"|
+|C52: DELETE Excluir Carrinho Concluido Sem Token 401|C52|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|
+|C53: DELETE Excluir Carrinho Cancelado 200|C53|Status Code: 200 <br /> Mensagem: "Registro excluído com sucesso"|Status Code: 200 <br /> Mensagem: "Registro excluído com sucesso. Estoque dos produtos reabastecido"|
+|C54: DELETE Excluir Carrinho Cancelado Sem Token 401|C54|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|Status Code: 401 <br /> Mensagem: "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"|
+</details> 
+
+### Bugs e sugestões
+
+- Nos testes C2 e C3, o Status Code previsto pela documentação é o "400", porém o Status Code retornado é o "401". Considerei como um bug.
+- Os cenários dos testes C4, C5, C6, C11, C12, C13, C14, C26, C27, C28 e C29 não são previstos pela documentação, porém são possíveis e retornam mensagens específicas, seria interessante que essas possibilidades fossem documentadas.
+- No teste C43, a mensagem prevista pela documentação é "Registro excluído com sucesso", porém a mensagem retornada é "Registro excluído com sucesso. Estoque dos produtos reabastecido". Também considerei como um bug.
+
 ![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
 
 ## Créditos
 
+[Demétrio Webber](https://github.com/DemetrioWebber) - Conhecimento obtido nas MasterClasses e inspiração para base do meu código.
+
+[Matheus Locatelli](https://github.com/matheuslocatelli) - Dicas e esclarecimento de dúvidas durante a mentoria e diariamente na daily. 
+
+[Emily Lanzarin](https://github.com/eslanzarin) - Ajuda na elaboração dos testes e do ReadMe.
+
+[Bianca Campos](https://youtube.com/playlist?list=PL5ipcSFH2tk8RWxtvuaOK-qpdAvlWkSoo) - Curso de Robot Framework.
+
+[Victoria Duarte](https://github.com/victoriaduarte/serverest-api-testing) - Inspiração para elaboração de keyword para criação de carrinho.
+
 ![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
 
 ## Agradecimentos
+Agradeço ao Demétrio Webber pelas MasterClasses e excelente didática que facilitou o aprendizado, ao Matheus Locatelli por ser um ótimo Scrum Master e estar sempre disposto a ajudar e tirar dúvidas, as meus colegas do programa de bolsa, em especial a Emily Lanzarin pela ajuda durante todo o programa e pela amizade que criamos (da sprint 2 pra vida né?). E por ultimo (mas não menos importante) agradeço a Compass por ter me dado a oportunidade de participar desse programa e obter um grande conhecimento que levarei por toda minha vida.     
 
 ![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
-
-
-
-
