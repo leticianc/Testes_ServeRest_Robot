@@ -1,0 +1,33 @@
+{
+    "Com_Nome_Existente":{
+        "nome":"Logitech MX Vertical",
+        "preco":"470",
+        "descricao":"Mouse",
+        "quantidade":"382"
+    },
+    "Sem_Nome":{
+        "nome":"",
+        "preco":"1000",
+        "descricao":"Descricao",
+        "quantidade":"20"
+    },
+    "Sem_Preco":{
+        "nome":"Produto",
+        "preco":"",
+        "descricao":"Descricao",
+        "quantidade":"20"
+    },
+    "Sem_Descricao":{
+        "nome":"Produto",
+        "preco":"1000",
+        "descricao":"",
+        "quantidade":"20"
+    },
+    "Sem_Quantidade":{
+        "nome":"Produto",
+        "preco":"1000",
+        "descricao":"Descricao",
+        "quantidade":""
+    },
+    "id_invalida":"00000000000"
+}

@@ -1,0 +1,40 @@
+{
+      "Quantidade_Insuficiente":{
+        "produtos": [
+          {
+            "idProduto": "BeeJh5lz3k6kSIzA",
+            "quantidade": 1000
+          },
+          {
+            "idProduto": "K6leHdftCeOJj8BJ",
+            "quantidade": 1000
+          }
+        ]
+      },
+      "Produto_Duplicado":{
+        "produtos": [
+          {
+            "idProduto": "BeeJh5lz3k6kSIzA",
+            "quantidade": 1
+          },
+          {
+            "idProduto": "BeeJh5lz3k6kSIzA",
+            "quantidade": 1
+          }
+        ]
+      },
+      "Produto_Invalido":{
+        "produtos": [
+          {
+            "idProduto": "0000000000000",
+            "quantidade": 1
+          },
+          {
+            "idProduto": "BeeJh5lz3k6kSIzA",
+            "quantidade": 1
+          }
+        ]
+      },
+      "id_invalida":"00000000000",
+      "id_valida":"qbMqntef4iTOwWfg"
+}
