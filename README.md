@@ -9,12 +9,12 @@ Esse repositório contém cenários de testes para todos os endpoints da API Ser
 ![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
 ## Conteúdos
-- [Sobre a API ServeRest](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#sobre-a-api-serverest)
-- [Ferramentas e Libraries necessárias](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#ferramentas-e-libraries-necess%C3%A1rias)
-- [Organização do repositório](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#organiza%C3%A7%C3%A3o-do-reposit%C3%B3rio)
-- [Baixando o repositório](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#baixando-o-reposit%C3%B3rio)
-- [Rodando os testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#rodando-os-testes)
-- [Relatório de testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#relat%C3%B3rio-de-testes)
+- [Sobre a API ServeRest](https://github.com/leticianc/Testes_ServeRest_Robot#sobre-a-api-serverest)
+- [Ferramentas e Libraries necessárias](https://github.com/leticianc/Testes_ServeRest_Robot#ferramentas-e-libraries-necess%C3%A1rias)
+- [Organização do repositório](https://github.com/leticianc/Testes_ServeRest_Robot#organiza%C3%A7%C3%A3o-do-reposit%C3%B3rio)
+- [Baixando o repositório](https://github.com/leticianc/Testes_ServeRest_Robot#baixando-o-reposit%C3%B3rio)
+- [Rodando os testes](https://github.com/leticianc/Testes_ServeRest_Robot#rodando-os-testes)
+- [Relatório de testes](https://github.com/leticianc/Testes_ServeRest_Robot#relat%C3%B3rio-de-testes)
 
 ![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
