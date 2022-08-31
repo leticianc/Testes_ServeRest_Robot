@@ -98,11 +98,11 @@ A pasta principal desse repositório apresenta o mapa mental da API ServeRest e 
 
 ## Baixando o repositório
 
-Para baixar o repositório, [clique aqui](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal/archive/refs/heads/main.zip) ou siga os passos abaixo
+Para baixar o repositório, [clique aqui](https://github.com/leticianc/Testes_ServeRest_Robot/archive/refs/heads/main.zip) ou siga os passos abaixo
 
 - Na página inicial do repositório, clique em `Code`, em seguida, clique em `download ZIP`
 
-![image](https://user-images.githubusercontent.com/106493717/182482469-fad2d0e2-0589-4926-84f9-3f157aa435a8.png)
+![image](https://user-images.githubusercontent.com/106493717/187699388-e0472605-3887-48d3-b049-c3de6b3ce0af.png)
 
 - Abra o arquivo baixado, extraia e salve na pasta de sua preferencia
 
@@ -121,7 +121,7 @@ npx serverest
 
 - Entre no cmd e digite o comando `cd` seguido do caminho da pasta que foi copiado, como no exemplo abaixo:
 
-![image](https://user-images.githubusercontent.com/106493717/182493263-0327c712-330f-4a3b-9db0-107180ee690e.png)
+![image](https://user-images.githubusercontent.com/106493717/187700554-7388bded-2108-47fd-8970-e6da8b26c698.png)
 
 - Abra uma nova janela do cmd (lembrando que você não deve fechar a janela do cmd com a ServeRest local)
 
