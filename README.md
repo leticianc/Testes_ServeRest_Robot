@@ -90,7 +90,9 @@ pip install rpaframework
 
 ## Organização do repositório
 
-A pasta principal desse repositório apresenta o mapa mental da API ServeRest e a pasta `Testes`. A pasta `Testes` está organizada no padrão Service-Objects, e dentro dela estão as pastas `Keywords`, com as keywords utilizadas nos cenários de testes, a pasta `Support`, com todas os arquivos necessários para auxiliar a criação dos cenários de testes, a pasta `Reports`, onde fica armazenado o resultado detalhado dos testes que foram executados, e a pasta  `testes`, com os cenários de testes de cada endpoint.
+A pasta principal desse repositório apresenta o mapa mental da API ServeRest e a pasta `Testes`. A pasta `Testes` está organizada no padrão Service-Objects, e dentro dela estão as pastas `Keywords`, com as keywords utilizadas nos cenários de testes, a pasta `Support`, com todas os arquivos necessários para auxiliar a criação dos cenários de testes, e a pasta  `testes`, com os cenários de testes de cada endpoint.
+
+*A pasta `Reports` será criada após a execução do primeiro teste e irá armazenar o resultado detalhado dos testes*
 
 ![image](https://user-images.githubusercontent.com/106493717/182511338-f0b3659f-630a-45ca-89c6-b07b2cb776c5.png)
 
