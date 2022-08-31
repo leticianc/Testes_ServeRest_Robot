@@ -1,12 +1,12 @@
 
 <h1 align="center" /> Automação de Testes em API com Robot Framework
 
-![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
+![image](https://user-images.githubusercontent.com/106493717/187707987-7ae60fda-0557-466f-b9ab-c2987f6f3559.png)
 
 ## Introdução
 Esse repositório contém cenários de testes para todos os endpoints da API ServeRest, utilizando Robot Framework. Abaixo você encontra instruções para instalar e rodar os testes em seu computador, além de informações sobre a API ServeRest e sobre os cenários de testes criados por mim.
 
-![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
+![image](https://user-images.githubusercontent.com/106493717/187707987-7ae60fda-0557-466f-b9ab-c2987f6f3559.png)
 
 ## Conteúdos
 - [Sobre a API ServeRest](https://github.com/leticianc/Testes_ServeRest_Robot#sobre-a-api-serverest)
@@ -16,7 +16,7 @@ Esse repositório contém cenários de testes para todos os endpoints da API Ser
 - [Rodando os testes](https://github.com/leticianc/Testes_ServeRest_Robot#rodando-os-testes)
 - [Relatório de testes](https://github.com/leticianc/Testes_ServeRest_Robot#relat%C3%B3rio-de-testes)
 
-![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
+![image](https://user-images.githubusercontent.com/106493717/187707987-7ae60fda-0557-466f-b9ab-c2987f6f3559.png)
 
 ## Sobre a API ServeRest
 A API ServeRest é uma API gratuita criada por [Paulo Gonçalves](https://github.com/PauloGoncalvesBH), que simula uma loja virtual e tem como objetivo servir de material de estudos para realização de testes de API. Os testes desse projeto abrangem todas as rotas da ServeRest, seguindo os endpoints `/login`, `/usuarios`, `/produtos` e `/carrinhos`.
@@ -25,7 +25,7 @@ A API ServeRest é uma API gratuita criada por [Paulo Gonçalves](https://github
 
 Veja a documentação completa da API ServeRest [aqui](http://serverest.dev/)
 
-![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
+![image](https://user-images.githubusercontent.com/106493717/187707987-7ae60fda-0557-466f-b9ab-c2987f6f3559.png)
 
 ## Ferramentas e Libraries necessárias
 
@@ -38,7 +38,7 @@ Veja a documentação completa da API ServeRest [aqui](http://serverest.dev/)
 - No Prompt de Comando, digite `python`. Se o Python estiver instalado corretamente, ele será iniciado no terminal como na imagem abaixo.
 ![image](https://user-images.githubusercontent.com/106493717/182475815-2650a9b0-bea5-470b-8614-cd84c76862f9.png)
 
-![image](https://user-images.githubusercontent.com/106493717/187696194-f8eaea8a-1635-46a2-8e6e-dc8a1e28d5f8.png)
+![image](https://user-images.githubusercontent.com/106493717/187708431-4ec5347c-0ea6-4039-9925-e6002c5363a4.png)
 
 ### Verificando se o Gerenciador de pacotes PIP está atualizado
 
@@ -46,7 +46,7 @@ Veja a documentação completa da API ServeRest [aqui](http://serverest.dev/)
 - Digite `pip list` e aperte ENTER. Serão listadas as bibliotecas presentes no seu dispositivo.
 - Caso apareça uma mensagem informando que o PIP não está atualizado, digite o comando `pip install --upgrade pip`
 
-![image](https://user-images.githubusercontent.com/106493717/187696194-f8eaea8a-1635-46a2-8e6e-dc8a1e28d5f8.png)
+![image](https://user-images.githubusercontent.com/106493717/187708431-4ec5347c-0ea6-4039-9925-e6002c5363a4.png)
 
 ### Instalando o Node
 
@@ -54,7 +54,7 @@ Veja a documentação completa da API ServeRest [aqui](http://serverest.dev/)
 - Clique na versão `16.16.0` e faça o download em seu computador
 - Após o download, execute o instalador seguindo os passos até finalizar
 
-![image](https://user-images.githubusercontent.com/106493717/187696194-f8eaea8a-1635-46a2-8e6e-dc8a1e28d5f8.png)
+![image](https://user-images.githubusercontent.com/106493717/187708431-4ec5347c-0ea6-4039-9925-e6002c5363a4.png)
 
 ### Instalando o RobotFramework
 Execute o seguinte comando no cmd:
@@ -63,7 +63,7 @@ Execute o seguinte comando no cmd:
 pip install robotframework
 ```
 
-![image](https://user-images.githubusercontent.com/106493717/187696194-f8eaea8a-1635-46a2-8e6e-dc8a1e28d5f8.png)
+![image](https://user-images.githubusercontent.com/106493717/187708431-4ec5347c-0ea6-4039-9925-e6002c5363a4.png)
 
 ### Instalando as Libraries 
 Execute os seguintes comandos no cmd:
@@ -86,7 +86,7 @@ pip install robotframework-faker
 pip install rpaframework
 ```
 
-![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
+![image](https://user-images.githubusercontent.com/106493717/187707987-7ae60fda-0557-466f-b9ab-c2987f6f3559.png)
 
 ## Organização do repositório
 
@@ -94,7 +94,7 @@ A pasta principal desse repositório apresenta o mapa mental da API ServeRest e 
 
 ![image](https://user-images.githubusercontent.com/106493717/182511338-f0b3659f-630a-45ca-89c6-b07b2cb776c5.png)
 
-![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
+![image](https://user-images.githubusercontent.com/106493717/187707987-7ae60fda-0557-466f-b9ab-c2987f6f3559.png)
 
 ## Baixando o repositório
 
@@ -106,7 +106,7 @@ Para baixar o repositório, [clique aqui](https://github.com/leticianc/Testes_Se
 
 - Abra o arquivo baixado, extraia e salve na pasta de sua preferencia
 
-![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
+![image](https://user-images.githubusercontent.com/106493717/187707987-7ae60fda-0557-466f-b9ab-c2987f6f3559.png)
 
 ## Rodando os testes
 - Instale a ServeRest Local digitando o comando abaixo no cmd:
@@ -127,26 +127,26 @@ npx serverest
 
 - Para executar os testes por endpoint, digite `robot -d ./reports testes/'endpoint'_tests.robot`, substitundo o 'endpoint' pelo endpoint desejado.
 
-![image](https://user-images.githubusercontent.com/106493717/182494886-7885a4a7-08ab-4587-a40f-9cb876c47187.png)
+![image](https://user-images.githubusercontent.com/106493717/187708431-4ec5347c-0ea6-4039-9925-e6002c5363a4.png)
 
 No exemplo abaixo temos o comando para executar os testes do endpoint `/usuarios`
 ```
 robot -d ./reports testes/usuarios_tests.robot
 ```
-![image](https://user-images.githubusercontent.com/106493717/182494886-7885a4a7-08ab-4587-a40f-9cb876c47187.png)
+![image](https://user-images.githubusercontent.com/106493717/187708431-4ec5347c-0ea6-4039-9925-e6002c5363a4.png)
 
 - Para executar um teste específico, você pode usar o comando `robot -d ./reports -i 'tag' testes/'endpoint'_tests.robot` substitundo o 'endpoint' pelo endpoint do teste desejado, e 'tag' pela sua tag 
 
 *No próximo tópico você encontrará todos os cenários de testes e suas respectivas tags* 
 
-![image](https://user-images.githubusercontent.com/106493717/182494886-7885a4a7-08ab-4587-a40f-9cb876c47187.png)
+![image](https://user-images.githubusercontent.com/106493717/187708431-4ec5347c-0ea6-4039-9925-e6002c5363a4.png)
 
 No exemplo abaixo temos o comando para executar o cenário de teste `35` que faz parte do endpoint `/produtos`
 ```
 robot -d ./reports -i -C35 testes/produtos_tests.robot
 ``` 
 
-![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
+![image](https://user-images.githubusercontent.com/106493717/187707987-7ae60fda-0557-466f-b9ab-c2987f6f3559.png)
 
 ## Relatório de testes
 
@@ -236,5 +236,5 @@ Clique no endpoint desejado para ver os cenários de testes, suas tags e uma com
 - Os cenários dos testes C4, C5, C6, C11, C12, C13, C14, C26, C27, C28 e C29 não são previstos pela documentação, porém são possíveis e retornam mensagens específicas, seria interessante que essas possibilidades fossem documentadas.
 - No teste C43, a mensagem prevista pela documentação é "Registro excluído com sucesso", porém a mensagem retornada é "Registro excluído com sucesso. Estoque dos produtos reabastecido". Também considerei como um bug.
 
-![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
+![image](https://user-images.githubusercontent.com/106493717/187707987-7ae60fda-0557-466f-b9ab-c2987f6f3559.png)
 
