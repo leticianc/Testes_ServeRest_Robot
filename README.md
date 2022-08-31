@@ -1,14 +1,12 @@
 
-<h1 align="center" /> RoboTron - Sprint 6
+<h1 align="center" /> Automação de Testes em API com Robot Framework
 
-<div align="center"><img src="https://user-images.githubusercontent.com/106493717/176893891-701d7121-0d6c-482c-a0b9-49d7c1547cae.png" width="400" height="auto"></div>
-
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
 ## Introdução
-Esse repositório apresenta o último Challenge do Programa de Bolsas RoboTron. O projeto contém cenários de testes para todos os endpoints da API ServeRest, utilizando Robot Framework. Abaixo você encontra instruções para instalar e rodar os testes em seu computador, além de informações sobre a API ServeRest e sobre os cenários de testes criados por mim.
+Esse repositório contém cenários de testes para todos os endpoints da API ServeRest, utilizando Robot Framework. Abaixo você encontra instruções para instalar e rodar os testes em seu computador, além de informações sobre a API ServeRest e sobre os cenários de testes criados por mim.
 
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
 ## Conteúdos
 - [Sobre a API ServeRest](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#sobre-a-api-serverest)
@@ -17,10 +15,8 @@ Esse repositório apresenta o último Challenge do Programa de Bolsas RoboTron. 
 - [Baixando o repositório](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#baixando-o-reposit%C3%B3rio)
 - [Rodando os testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#rodando-os-testes)
 - [Relatório de testes](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#relat%C3%B3rio-de-testes)
-- [Créditos](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#cr%C3%A9ditos)
-- [Agradecimentos](https://github.com/leticianc/Robotron_Leticia_Nunes_ProjetoFinal#agradecimentos)
 
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
 ## Sobre a API ServeRest
 A API ServeRest é uma API gratuita criada por [Paulo Gonçalves](https://github.com/PauloGoncalvesBH), que simula uma loja virtual e tem como objetivo servir de material de estudos para realização de testes de API. Os testes desse projeto abrangem todas as rotas da ServeRest, seguindo os endpoints `/login`, `/usuarios`, `/produtos` e `/carrinhos`.
@@ -29,7 +25,7 @@ A API ServeRest é uma API gratuita criada por [Paulo Gonçalves](https://github
 
 Veja a documentação completa da API ServeRest [aqui](http://serverest.dev/)
 
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
 ## Ferramentas e Libraries necessárias
 
@@ -42,7 +38,7 @@ Veja a documentação completa da API ServeRest [aqui](http://serverest.dev/)
 - No Prompt de Comando, digite `python`. Se o Python estiver instalado corretamente, ele será iniciado no terminal como na imagem abaixo.
 ![image](https://user-images.githubusercontent.com/106493717/182475815-2650a9b0-bea5-470b-8614-cd84c76862f9.png)
 
-![image](https://user-images.githubusercontent.com/106493717/182480116-1b388aa2-5c0b-4732-abca-35ec71b6f7e0.png)
+![image](https://user-images.githubusercontent.com/106493717/187696194-f8eaea8a-1635-46a2-8e6e-dc8a1e28d5f8.png)
 
 ### Verificando se o Gerenciador de pacotes PIP está atualizado
 
@@ -50,7 +46,7 @@ Veja a documentação completa da API ServeRest [aqui](http://serverest.dev/)
 - Digite `pip list` e aperte ENTER. Serão listadas as bibliotecas presentes no seu dispositivo.
 - Caso apareça uma mensagem informando que o PIP não está atualizado, digite o comando `pip install --upgrade pip`
 
-![image](https://user-images.githubusercontent.com/106493717/182480116-1b388aa2-5c0b-4732-abca-35ec71b6f7e0.png)
+![image](https://user-images.githubusercontent.com/106493717/187696194-f8eaea8a-1635-46a2-8e6e-dc8a1e28d5f8.png)
 
 ### Instalando o Node
 
@@ -58,7 +54,7 @@ Veja a documentação completa da API ServeRest [aqui](http://serverest.dev/)
 - Clique na versão `16.16.0` e faça o download em seu computador
 - Após o download, execute o instalador seguindo os passos até finalizar
 
-![image](https://user-images.githubusercontent.com/106493717/182480116-1b388aa2-5c0b-4732-abca-35ec71b6f7e0.png)
+![image](https://user-images.githubusercontent.com/106493717/187696194-f8eaea8a-1635-46a2-8e6e-dc8a1e28d5f8.png)
 
 ### Instalando o RobotFramework
 Execute o seguinte comando no cmd:
@@ -67,7 +63,7 @@ Execute o seguinte comando no cmd:
 pip install robotframework
 ```
 
-![image](https://user-images.githubusercontent.com/106493717/182480116-1b388aa2-5c0b-4732-abca-35ec71b6f7e0.png)
+![image](https://user-images.githubusercontent.com/106493717/187696194-f8eaea8a-1635-46a2-8e6e-dc8a1e28d5f8.png)
 
 ### Instalando as Libraries 
 Execute os seguintes comandos no cmd:
@@ -90,15 +86,15 @@ pip install robotframework-faker
 pip install rpaframework
 ```
 
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
 ## Organização do repositório
 
-A pasta principal desse repositório apresenta o mapa mental da API ServeRest e a pasta `Testes`. A pasta `Testes` está organizada no padrão Service-Objects conforme foi orientado pelo Scrum Master Demétrio Webber, e dentro dela estão as pastas `Keywords`, com as keywords utilizadas nos cenários de testes, a pasta `Support`, com todas os arquivos necessários para auxiliar a criação dos cenários de testes, a pasta `Reports`, onde fica armazenado o resultado detalhado dos testes que foram executados, e a pasta  `testes`, com os cenários de testes de cada endpoint.
+A pasta principal desse repositório apresenta o mapa mental da API ServeRest e a pasta `Testes`. A pasta `Testes` está organizada no padrão Service-Objects, e dentro dela estão as pastas `Keywords`, com as keywords utilizadas nos cenários de testes, a pasta `Support`, com todas os arquivos necessários para auxiliar a criação dos cenários de testes, a pasta `Reports`, onde fica armazenado o resultado detalhado dos testes que foram executados, e a pasta  `testes`, com os cenários de testes de cada endpoint.
 
 ![image](https://user-images.githubusercontent.com/106493717/182511338-f0b3659f-630a-45ca-89c6-b07b2cb776c5.png)
 
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
 ## Baixando o repositório
 
@@ -110,7 +106,7 @@ Para baixar o repositório, [clique aqui](https://github.com/leticianc/Robotron_
 
 - Abra o arquivo baixado, extraia e salve na pasta de sua preferencia
 
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
 ## Rodando os testes
 - Instale a ServeRest Local digitando o comando abaixo no cmd:
@@ -150,7 +146,7 @@ No exemplo abaixo temos o comando para executar o cenário de teste `35` que faz
 robot -d ./reports -i -C35 testes/produtos_tests.robot
 ``` 
 
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
 ## Relatório de testes
 
@@ -240,25 +236,5 @@ Clique no endpoint desejado para ver os cenários de testes, suas tags e uma com
 - Os cenários dos testes C4, C5, C6, C11, C12, C13, C14, C26, C27, C28 e C29 não são previstos pela documentação, porém são possíveis e retornam mensagens específicas, seria interessante que essas possibilidades fossem documentadas.
 - No teste C43, a mensagem prevista pela documentação é "Registro excluído com sucesso", porém a mensagem retornada é "Registro excluído com sucesso. Estoque dos produtos reabastecido". Também considerei como um bug.
 
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
+![image](https://user-images.githubusercontent.com/106493717/187695029-5ea1db4e-8985-4cd5-a148-df8b39d3f658.png)
 
-## Créditos
-
-[Demétrio Webber](https://github.com/DemetrioWebber) - Conhecimento obtido nas MasterClasses e inspiração para base do meu código.
-
-[Matheus Locatelli](https://github.com/matheuslocatelli) - Dicas e esclarecimento de dúvidas durante a mentoria e dailies. 
-
-[Emily Lanzarin](https://github.com/eslanzarin) - Ajuda na elaboração dos testes e do ReadMe.
-
-[Amanda Bressam](https://github.com/abressam) e [Beatriz Jardim](https://github.com/BeatrizJardimm) - As ideias compartilhadas por elas nas dailies me inspiraram e ajudaram muito. 
-
-[Bianca Campos](https://youtube.com/playlist?list=PL5ipcSFH2tk8RWxtvuaOK-qpdAvlWkSoo) - Curso de Robot Framework.
-
-[Victoria Duarte](https://github.com/victoriaduarte/serverest-api-testing) - Inspiração para elaboração de keyword para criação de carrinho.
-
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
-
-## Agradecimentos
-Agradeço ao Demétrio Webber pelas MasterClasses e excelente didática que facilitou o aprendizado, ao Matheus Locatelli por ser um ótimo Scrum Master e estar sempre disposto a ajudar e tirar dúvidas, as meus colegas do programa de bolsa, em especial a Emily Lanzarin pela ajuda durante todo o programa e pela amizade que criamos (da sprint 2 pra vida né?). E por ultimo (mas não menos importante) agradeço a Compass por ter me dado a oportunidade de participar desse programa e obter um grande conhecimento que levarei por toda minha vida.     
-
-![image](https://user-images.githubusercontent.com/106493717/182469833-f1c1b52a-662b-45f6-8bc6-24b1cedcdead.png)
